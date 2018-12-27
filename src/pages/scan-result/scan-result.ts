@@ -17,8 +17,9 @@ export class ScanResultPage {
 
   ionViewDidLoad() {
     this.format = this.navParams.get('format');
-    console.log("ionViewDidLoad format:",this.format);
     this.text = this.navParams.get('text');
+
+    console.log("ionViewDidLoad format:", this.format);
     console.log("ionViewDidLoad text:", this.text);
   }
 

@@ -7,6 +7,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { ScanResultPage } from '../pages/scan-result/scan-result';
 import { GeneratePage } from '../pages/generate/generate';
+import { GenerateResultPage } from '../pages/generate-result/generate-result';
 import { IonicPage } from '../pages/ionic/ionic';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,6 +21,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     HomePage,
     ScanResultPage,
     GeneratePage,
+    GenerateResultPage,
     IonicPage
   ],
   imports: [
@@ -38,6 +40,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     HomePage,
     ScanResultPage,
     GeneratePage,
+    GenerateResultPage,
     IonicPage
   ],
   providers: [

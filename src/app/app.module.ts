@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
+import { ScanResultPage } from '../pages/scan-result/scan-result';
 import { GeneratePage } from '../pages/generate/generate';
 import { IonicPage } from '../pages/ionic/ionic';
 
@@ -17,6 +18,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     MyApp,
     TabsPage,
     HomePage,
+    ScanResultPage,
     GeneratePage,
     IonicPage
   ],
@@ -34,6 +36,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     MyApp,
     TabsPage,
     HomePage,
+    ScanResultPage,
     GeneratePage,
     IonicPage
   ],

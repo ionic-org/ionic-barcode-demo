@@ -13,6 +13,7 @@ import { IonicPage } from '../pages/ionic/ionic';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { Camera } from '@ionic-native/camera';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 
 @NgModule({
@@ -49,6 +50,7 @@ import { WebView } from '@ionic-native/ionic-webview/ngx';
     StatusBar,
     SplashScreen,
     BarcodeScanner,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

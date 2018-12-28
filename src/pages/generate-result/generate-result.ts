@@ -12,6 +12,7 @@ export class GenerateResultPage {
   type:string;
   format:string;
   file:string;
+  private win: any = window;
 
   constructor(
     public navCtrl: NavController,
@@ -31,12 +32,14 @@ export class GenerateResultPage {
     console.log("ionViewDidLoad file:", this.file);
     // this.file = normalizeURL(this.file);
     // console.log("normalizeURL:", this.file);
-    // try {
-    //   this.file = this.webview.convertFileSrc(this.file);
-    //   console.log("convertFileSrc:", this.file);
-    // } catch (error) {
-    //   console.error("convertFileSrc error:", error);
-    // }
+    try {
+
+      this.file = this.win.Ionic.WebView.convertFileSrc(this.file);
+      // this.file = this.webview.convertFileSrc();
+      console.log("convertFileSrc:", this.file);
+    } catch (error) {
+      console.error("convertFileSrc error:", error);
+    }
 
   }
 

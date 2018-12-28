@@ -13,6 +13,7 @@ import { IonicPage } from '../pages/ionic/ionic';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { WebView } from '@ionic-native/ionic-webview/ngx';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     IonicPage
   ],
   providers: [
+    WebView,
     StatusBar,
     SplashScreen,
     BarcodeScanner,

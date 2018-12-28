@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { WebView } from '@ionic-native/ionic-webview';
+import { NavController, NavParams, normalizeURL} from 'ionic-angular';
+import { WebView } from '@ionic-native/ionic-webview/ngx';
 
 @Component({
   selector: 'page-generate-result',
@@ -29,8 +29,15 @@ export class GenerateResultPage {
     console.log("ionViewDidLoad type:", this.type);
     console.log("ionViewDidLoad format:", this.format);
     console.log("ionViewDidLoad file:", this.file);
-    this.file = this.webview.convertFileSrc(this.file);
-    console.log("ionViewDidLoad file:", this.file);
+    // this.file = normalizeURL(this.file);
+    // console.log("normalizeURL:", this.file);
+    // try {
+    //   this.file = this.webview.convertFileSrc(this.file);
+    //   console.log("convertFileSrc:", this.file);
+    // } catch (error) {
+    //   console.error("convertFileSrc error:", error);
+    // }
+
   }
 
 }

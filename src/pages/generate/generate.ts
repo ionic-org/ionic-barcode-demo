@@ -93,6 +93,7 @@ export class GeneratePage {
           handler: data => {
             console.log('Confirm clicked:', data);
             this.number = data.number;
+            // this.generate(this.barcodeScanner.Encode.TEXT_TYPE, this.number);
             this.generate(this.type, this.number);
           }
         }
